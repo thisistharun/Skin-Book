@@ -1,0 +1,142 @@
+.remedies-container {
+    min-height: calc(100vh - 140px);
+    width: 100%;
+    padding: 0 50px;
+    // display: flex;
+    // justify-content: space-around;
+    // align-items: center;
+
+    .header {
+        margin-top: 50px;
+        font-size: 38px;
+        font-style: italic;
+        color: $theme;
+    }
+
+    .header-text-in-remedies{
+        margin-top: 25px;
+        font-size: 48px;
+
+        @media (max-width: 1080px) {
+            font-size: 20px;
+        }
+
+        span{
+            padding-right: 5px;
+            font-size: 24px;
+
+            @media (max-width: 1080px) {
+                font-size: 18px;
+            }
+        }
+
+        a{
+            font-size: 30px;
+            text-decoration: underline;
+            color: $theme;
+            cursor: pointer;
+            font-style: italic;
+
+            @media (max-width: 1080px) {
+                font-size: 24px;
+            }
+        }
+    }
+
+    .routine-header{
+        margin: 25px 0;
+        font-size: 38px;
+        font-style: italic;
+        color: $theme;
+    }
+
+    .sub-heading{
+        margin: 15px 0;
+        font-size: 24px;
+        color: $theme;
+        text-transform: capitalize;
+    }
+
+    li:last-child{
+        margin-bottom: 25px;
+    }
+}
+
+.remedy-cards-container {
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .iframe-card{
+        margin: 25px;
+    }
+
+    .remedy-card {
+        display: flex;
+        flex-direction: column;
+
+        padding: 15px;
+        width: 500px;
+        margin: 25px;
+
+        @media (max-width: 1080px) {
+            width: calc(100% - 20px);
+            margin: 10px;
+        }
+
+        border: 2px solid $theme;
+
+        a {
+            text-decoration: none;
+        }
+
+        .sub-header {
+            color: $theme;
+            font-size: 24px;
+            font-style: italic;
+            margin: 5px 0;
+            margin-left: 25px;
+        }
+
+        .sub-sub-header{
+            color: $theme;
+            font-size: 20px;
+            font-style: italic;
+            margin: 5px 0;
+            margin-left: 25px;
+        }
+
+        .ingredients-container {
+            display: flex;
+            flex-wrap: wrap;
+
+            .ingredients {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin: 0 25px;
+
+                .image {
+                    height: 150px;
+                    width: 150px;
+                    border-radius: 150px;
+                }
+
+                .ingredient-title {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .recipe-container {
+            text-align: justify;
+            margin: 10px 25px;
+        }
+
+        .btn{
+            margin-left: 25px;
+        }
+    }
+}
